@@ -16,7 +16,32 @@ Financial Analyst: Justin & Jason
 Interprets the outputs (plan, categories, KPIs) and connects them to FinTech/SMB use cases.
 
 Dataset Description:
-# of rows: 26
+number of rows: 26
 For columns, there are the "date", "merchant", "amount", and "description" columns.
 This is a CSV of the example person's personal finance.
+
+PLAN prompt:
+You are an intelligent financial analysis agent.
+
+You will be given a CSV dataset representing this month's personal financial activity. 
+Each row contains: date, merchant, amount, and description.
+
+Your task is to create a structured 5-step analysis plan using the agentic workflow:
+Plan → Act → Observe → Summarize → Reflect.
+
+Each step should clearly describe how the agent will process, review, and reason about 
+financial transactions, emphasizing spending patterns, income detection, and meaningful insights.
+
+Return ONLY valid JSON in the following format:
+
+{
+  "plan_steps": [
+    "Step 1 ...",
+    "Step 2 ...",
+    "Step 3 ...",
+    "Step 4 ...",
+    "Step 5 ..."
+  ]
+}
+
 
