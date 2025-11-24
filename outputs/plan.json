@@ -1,0 +1,9 @@
+{
+  "plan_steps": [
+    "Step 1: **Plan** - Load and preprocess the CSV dataset into a pandas DataFrame, ensuring date and amount columns are in the correct data types. This will allow for efficient filtering, grouping, and aggregation of transactions.",
+    "Step 2: **Act** - Filter the transactions to only include income and expenses, categorizing each transaction as either 'income' or 'expense' based on the description. This will enable the agent to focus on relevant transactions.",
+    "Step 3: **Observe** - Group the transactions by category (merchant) and calculate the total amount spent in each category. This will help identify areas of high spending and potential areas for cost-cutting.",
+    "Step 4: **Summarize** - Calculate the total income and total expenses for the month, as well as the net change in the account balance. This will provide a high-level overview of the financial situation.",
+    "Step 5: **Reflect** - Analyze the results from the previous steps to identify trends, patterns, and areas for improvement. This may involve setting financial goals, creating a budget, or exploring ways to optimize spending habits."
+  ]
+}
