@@ -45,6 +45,8 @@ Return ONLY valid JSON in the following format:
   ]
 }
 
+# This is done on a console on AWS Bedrock playground mode, specifically Chat/Text Playground with Llama 3.1 8B Instruct model. The output is saved into outputs/plan.json.  
+
 Categorization Prompt (Draft):
 
 You are a financial transaction categorization agent.
