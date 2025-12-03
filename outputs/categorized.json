@@ -1,1 +1,79 @@
 
+
+{
+  "categorized": [
+    {
+      "date": "2024-10-01",
+      "merchant": "Amazon",
+      "amount": 45.99,
+      "category": "Shopping"
+    },
+    {
+      "date": "2024-10-01",
+      "merchant": "Starbucks",
+      "amount": 8.25,
+      "category": "Dining"
+    },
+    {
+      "date": "2024-10-01",
+      "merchant": "Duane Reade",
+      "amount": 12.49,
+      "category": "Shopping"
+    },
+    {
+      "date": "2024-10-02",
+      "merchant": "Trader Joe's",
+      "amount": 76.40,
+      "category": "Shopping"
+    },
+    {
+      "date": "2024-10-02",
+      "merchant": "Uber",
+      "amount": 22.50,
+      "category": "Dining"
+    },
+    {
+      "date": "2024-10-02",
+      "merchant": "McDonald's",
+      "amount": 9.89,
+      "category": "Dining"
+    },
+    {
+      "date": "2024-10-03",
+      "merchant": "Blue Bottle",
+      "amount": 6.50,
+      "category": "Dining"
+    },
+    {
+      "date": "2024-10-03",
+      "merchant": "Costco",
+      "amount": 185.75,
+      "category": "Shopping"
+    },
+    {
+      "date": "2024-10-03",
+      "merchant": "Steam",
+      "amount": 29.99,
+      "category": "Other"
+    },
+    {
+      "date": "2024-10-04",
+      "merchant": "Chipotle",
+      "amount": 14.10,
+      "category": "Dining"
+    },
+    {
+      "date": "2024-10-04",
+      "merchant": "Target",
+      "amount": 62.88,
+      "category": "Shopping"
+    },
+    {
+      "date": "2024-10-05",
+      "merchant": "Spotify",
+      "amount": 10.99,
+      "category": "Other"
+    },
+    {
+      "date": "2024-10-05",
+      "merchant": "
