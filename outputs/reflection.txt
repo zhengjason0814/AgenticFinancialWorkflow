@@ -1,1 +1,8 @@
+During the categorization and KPI computation stages, several issues emerged that highlight weaknesses in the current workflow. The initial categorization output from the LLM was incomplete because the model stopped generating mid response, resulting in missing transactions. This caused incorrect KPI values, including an understated total spend, incorrect top merchants, and the wrong average expense. After regenerating the full categorized dataset, the KPIs were recalculated manually to ensure accuracy.
+
+A few categorizations were also questionable. For example, Uber was placed in “Other,” which is acceptable but could be more precise if a transportation category existed. Spotify was labeled as “Utilities,” though it could reasonably fall under “Other” or “Entertainment.” These inconsistencies show that clearer categorization rules are needed.
+
+To improve reliability, the prompts should explicitly instruct the model to include every transaction and verify that the number of outputs matches the number of inputs. Strengthened schema enforcement and instructions to avoid early cutoffs would reduce errors. Similarly, the KPI prompt should include rules requiring validation checks, such as recalculating totals or confirming merchant counts.
+
+Overall, the reflection highlights that agentic AI workflows benefit from strict prompt structure, output validation, and fallback methods (such as manual verification) to ensure accuracy across all stages.
 
