@@ -108,7 +108,7 @@ Identified categorization issues, KPI errors, and weaknesses in the workflow.
 Reflection saved in `outputs/reflection.txt`.
 
 Reflection Summary
-- The LLM initially produced a **truncated categorized.json**, which caused wrong KPI values.  
+- The LLM initially produced part of the categorized.json, which caused wrong KPI values.  
 - Total spend, top merchants, and average expense were incorrect until the full dataset was regenerated.  
 - Some categorizations were ambiguous (e.g., Uber as Other, Spotify as Utilities).  
 - Improvements include enforcing strict transaction count matching, adding stronger schema rules, and preventing early cutoffs.  
@@ -125,7 +125,7 @@ This project demonstrates the full Agentic AI loop:
 
 - Plan: Define the entire analysis strategy.  
 - Act: Categorize financial transactions.  
-- Observe:** Compute KPIs to measure financial behavior.  
+- Observe: Compute KPIs to measure financial behavior.  
 - **Summarize:** Produce a human-readable summary of financial health.  
 - **Reflect:** Identify errors and propose improvements.
 
