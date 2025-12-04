@@ -80,6 +80,55 @@ Return your output ONLY as valid JSON in this structure:
   ]
 }
 
+After using this categorization prompt, the categorized JSON was saved into 'outputs/categorized.json'.
+This file was later corrected because the first model output was incomplete.
 
+Step 1 - Plan
+Generated a 5-step agentic workflow describing how the system would Act, Observe, Summarize, and Reflect.  
+
+Step 2 - Act
+Ran the categorization prompt on the transaction list.  
+The model originally cut off the output, so categorization was regenerated and validated manually.
+
+Step 3 - Observe
+Computed KPIs:  
+- total_spend  
+- total_income  
+- top_merchants  
+- average_expense  
+Saved into `outputs/kpis.json`.  
+Incorrect KPIs from the partial dataset were corrected using the final categorized file.
+
+Step 4 - Summarize
+Created a professional ≤100-word financial summary using KPIs + categories.  
+Saved as `outputs/summary.txt`.
+
+Step 5 - Reflect
+Identified categorization issues, KPI errors, and weaknesses in the workflow.  
+Reflection saved in `outputs/reflection.txt`.
+
+Reflection Summary
+- The LLM initially produced a **truncated categorized.json**, which caused wrong KPI values.  
+- Total spend, top merchants, and average expense were incorrect until the full dataset was regenerated.  
+- Some categorizations were ambiguous (e.g., Uber as Other, Spotify as Utilities).  
+- Improvements include enforcing strict transaction count matching, adding stronger schema rules, and preventing early cutoffs.  
+- Manual verification helped confirm accurate KPIs, demonstrating the importance of validation in agentic loops.
+
+JSON Troubleshooting Notes
+- In the first run, Bedrock stopped generating mid-JSON, producing incomplete output.  
+- This caused missing transactions and incorrect KPI values.  
+- A stronger prompt was used requiring the model to include **ALL transactions**.  
+- Regeneration produced a complete and valid categorized.json.  
+- After corrections, KPIs were recalculated and saved properly.
+
+This project demonstrates the full Agentic AI loop:
+
+- Plan: Define the entire analysis strategy.  
+- Act: Categorize financial transactions.  
+- Observe:** Compute KPIs to measure financial behavior.  
+- **Summarize:** Produce a human-readable summary of financial health.  
+- **Reflect:** Identify errors and propose improvements.
+
+The workflow shows how LLM reasoning can support financial analysis, but also highlights the importance of validation, schema enforcement, and iterative improvement.
 
 
